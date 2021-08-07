@@ -1,14 +1,30 @@
 {
   "name": "x-store",
   "version": "1.0.0",
-  "description": "",
+  "description": "An commerce website with multivendor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve:local": "nodemon index.js",
+    "test": "mocha tests/*.js --exit",
+    "lint": "eslint./*.js",
+    "lint:fix": "eslint --fix ./*.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "commerce"
+  ],
+  "author": "joshua$real123",
   "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "mocha": "^9.0.3",
+    "nodemon": "^2.0.12"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
